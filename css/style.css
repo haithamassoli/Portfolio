@@ -13,3 +13,94 @@
 /* body {
   height: 5000px;
 } */
+
+/* Start logo animatiom */
+.menu {
+  background-color: #3d5e91;
+}
+
+#logo {
+  position: absolute;
+  animation: fil 1.5s both 10s;
+  height: 30px;
+  width: 300px;
+  left: 0;
+  bottom: 15px;
+}
+
+#logo #H {
+  stroke-dashoffset: 535px;
+  stroke-dasharray: 534px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 0;
+}
+
+#logo #i {
+  stroke-dashoffset: 239px;
+  stroke-dasharray: 239px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 7s;
+}
+
+#logo #t {
+  stroke-dasharray: 314px;
+  stroke-dashoffset: 313.01px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 6s;
+}
+
+#logo #h {
+  stroke-dasharray: 477px;
+  stroke-dashoffset: 476.99999px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 5s;
+}
+
+#logo #a {
+  stroke-dasharray: 506px;
+  stroke-dashoffset: 506px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+
+#logo #m {
+  stroke-dasharray: 668px;
+  stroke-dashoffset: 668px;
+  animation-name: lineAnim;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+@keyframes lineAnim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fil {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+/* End logo animatiom */
+/* 
+@media (max-width: 768px) {
+  #logo {
+    position: relative;
+  }
+} */
