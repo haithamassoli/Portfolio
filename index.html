@@ -100,24 +100,24 @@
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#"
+              <a class="nav-link active text-light" aria-current="page" href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">About</a>
+              <a class="nav-link text-light" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Skills</a>
+              <a class="nav-link text-light" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Services</a>
+              <a class="nav-link text-light" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Portfolio</a>
+              <a class="nav-link text-light" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contact me</a>
+              <a class="nav-link text-light" href="#contact">Contact me</a>
             </li>
             <li class="nav-item dropdown"></li>
           </ul>
@@ -129,27 +129,30 @@
 
     <!-- Start Home -->
 
-    <section class="home mt-5 pt-5 vh-100">
+    <section class="home  vh-100" id="home">
       <div class="container">
-        <div class="row">
-          <div class="row col-2">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-2 mt-5">
             <a
               class="col-12 align-self-end"
+              target="_blanck"
               href="https://www.linkedin.com/in/haitham-assoli-b69706a9/"
               ><i class="uil uil-linkedin h1"></i
-            ></a>
+            ></a><br>
             <a
-              class="col-12 align-self-center"
+              class="col-12 align-self-center align-ks"
+              target="_blanck"
               href="https://github.com/haithamassoli"
               ><i class="uil uil-github h1"></i
-            ></a>
+            ></a><br>
             <a
               class="col-12 align-self-start"
+              target="_blanck"
               href="https://www.facebook.com/assoli.55/"
               ><i class="uil uil-facebook h1"></i
             ></a>
           </div>
-          <div class="col-5">
+          <div class="col-md-5 col-xs-10 home__about">
             <h1 class="mt-5">Hi I'am Haitham</h1>
             <h3 class="mt-2">Full Stack Developer</h3>
             <p class="lead mt-3">
@@ -159,15 +162,9 @@
             <button type="button" class="btn btn-primary mt-5 mb-5">
               Contact Me<i class="uil uil-message"></i>
             </button>
-            <div class="mt-5">
-              <a class="mt-5 text-decoration-none" href="#">
-                <i class="uil uil-mouse-alt"></i>Scroll Down
-                <i class="uil uil-arrow-down"></i>
-              </a>
-            </div>
           </div>
 
-          <div class="col-5 position-relative home__img overflow-heddin">
+          <div class="col-md-5 col-xs-10  position-relative home__img overflow-heddin">
             <svg
               class="home__blob"
               viewBox="0 0 200 187"
@@ -195,14 +192,47 @@
           </div>
         </div>
       </div>
+      <a href="#"><i class="scroll__down uil uil-angle-double-down h1"></i></a>
     </section>
 
     <!-- End Home -->
 
     <!-- Start About Me -->
-    <section class="container">
-      <h1 class="text-center">About Me</h1>
-      <p class="lead text-center text-secondary">My introduction</p>
+    <section class="container vh-100" id="about">
+      <h1 class="text-center mt-5">About Me</h1>
+      <p class="lead text-center text-secondary mb-5">My introduction</p>
+      <div class="row ">
+        <div class="col-md-6">
+          <img src="./img/haitham02.jpg" width="100%" class="haitham01" alt="" />
+          <span class=""></span>
+        </div>
+        <div class="col-md-6">
+          <p class=" lead text-center mb-5 mt-5">
+            Web developer, wuth extensive knowledge and years of experience,
+            working in web technologies and Ui/Ux design, delivering quality
+            work.
+          </p>
+          <div class="row">
+            <div class="col-4">
+              <h3 class="mt-5">01+</h3>
+              <p class="lead">years<br />experience</p>
+            </div>
+  
+            <div class="col-4">
+              <h3 class="mt-5">20+</h3>
+              <p class="lead">Completed<br />projects</p>
+            </div>
+   
+            <div class="col-4">
+              <h3 class="mt-5">05+</h3>
+              <p class="lead">Companies<br />worked</p>
+            </div>
+
+          <button type="button" class="btn btn-primary mt-5 mb-5">
+            Download CV<i class="uil uil-file-download-alt ml-5"></i>
+          </button>
+        </div>
+      </div>
     </section>
     <!-- End About Me -->
 

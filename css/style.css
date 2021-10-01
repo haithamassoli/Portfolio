@@ -2,28 +2,26 @@
   font-family: "Poppins", sans-serif;
 }
 
-.home__blob {
-  fill: #3d5e91;
+/* Start navbar */
+.navbar-light .navbar-nav .nav-link {
+  border-radius: 15px;
 }
 
-.home__me {
-  width: 100%;
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: rgba(0, 102, 255, 0.5);
 }
-
-/* body {
-  height: 5000px;
-} */
+/* End navbar */
 
 /* Start logo animatiom */
 .menu {
-  background-color: #3d5e91;
+  background-color: rgb(61, 94, 145);
 }
 
 #logo {
-  position: absolute;
-  animation: fil 1.5s both 10s;
+  position: sticky;
+  animation: fill 1.5s both 10s;
   height: 30px;
-  width: 300px;
+  width: 250px;
   left: 0;
   bottom: 15px;
 }
@@ -88,19 +86,42 @@
   }
 }
 
-@keyframes fil {
+@keyframes fill {
   from {
     fill: transparent;
   }
   to {
-    fill: white;
+    fill: #fff;
   }
 }
-
 /* End logo animatiom */
-/* 
+
+/* Start home page */
+.home {
+  margin-top: 150px;
+}
+.home__blob {
+  fill: #3d5e91;
+}
+
+.home__me {
+  width: 100%;
+}
+
+.scroll__down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+
 @media (max-width: 768px) {
-  #logo {
-    position: relative;
+  .home__img {
+    order: 2;
+    width: 300px;
   }
-} */
+
+  .home__about {
+    order: 4;
+  }
+}
+/* End home page */
