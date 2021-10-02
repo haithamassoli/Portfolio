@@ -183,3 +183,26 @@
   }
 }
 /* End Qualification */
+
+/* Start card page */
+.card-body {
+  height: 200px;
+  box-shadow: 15px 18px 7px -12px #333;
+}
+/* Start card page */
+
+/* Start portfolio page */
+.filter::before {
+  content: "";
+  position: absolute;
+  background: rgba(3, 3, 3, 0.5);
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+
+.carousel-caption {
+  background: rgba(74, 95, 189, 0.8);
+  margin-bottom: 225px;
+}
+/* Start portfolio page */
