@@ -104,16 +104,6 @@
   fill: #3d5e91;
 }
 
-.home__me {
-  width: 100%;
-}
-
-.scroll__down {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-}
-
 @media (max-width: 768px) {
   .home__img {
     order: 2;
@@ -125,3 +115,13 @@
   }
 }
 /* End home page */
+
+/* Start skills page */
+.progress {
+  height: 3px;
+}
+
+.ssss {
+  margin-top: 150px;
+}
+/* End skills page */
