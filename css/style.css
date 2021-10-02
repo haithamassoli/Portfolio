@@ -128,12 +128,12 @@
 /* End skills page */
 
 /* Start Qualification */
-.qualificationtpage .line {
+.qualificationtpage .lineCercle {
   height: 400px;
   width: 1px;
 }
 
-.qualificationtpage .line::before {
+.qualificationtpage .lineCercle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -144,7 +144,7 @@
   background-color: #0d6efd;
 }
 
-.qualificationtpage .line::after {
+.qualificationtpage .lineCercle::after {
   content: "";
   position: absolute;
   top: 30%;
@@ -153,5 +153,33 @@
   height: 20px;
   border-radius: 50%;
   background-color: #0d6efd;
+}
+
+.qualificationtpage .lineCercleTow::before {
+  content: "";
+  position: absolute;
+  bottom: -400px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+.qualificationtpage .lineCercleTow::after {
+  content: "";
+  position: absolute;
+  bottom: -250px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .qualificationtpage {
+    font-size: 16px;
+  }
 }
 /* End Qualification */
