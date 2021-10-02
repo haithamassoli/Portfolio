@@ -3,20 +3,21 @@
 }
 
 /* Start navbar */
-.navbar-light .navbar-nav .nav-link {
-  border-radius: 15px;
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/bars.svg);
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  box-shadow: none;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  background-color: rgba(0, 102, 255, 0.5);
+  opacity: 0.8;
 }
 /* End navbar */
 
 /* Start logo animatiom */
-.menu {
-  background-color: rgb(61, 94, 145);
-}
-
 #logo {
   position: sticky;
   animation: fill 1.5s both 10s;
@@ -119,9 +120,5 @@
 /* Start skills page */
 .progress {
   height: 3px;
-}
-
-.ssss {
-  margin-top: 150px;
 }
 /* End skills page */
