@@ -98,7 +98,7 @@
 /* End logo animatiom */
 
 /* Start home page */
-.home {
+.homepage {
   margin-top: 150px;
 }
 .home__blob {
@@ -121,7 +121,37 @@
 .progress {
   height: 3px;
 }
-/* End skills page */
+
 .skillpage {
   margin-top: 20em;
 }
+/* End skills page */
+
+/* Start Qualification */
+.qualificationtpage .line {
+  height: 400px;
+  width: 1px;
+}
+
+.qualificationtpage .line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+.qualificationtpage .line::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+/* End Qualification */
