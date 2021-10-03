@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -454,7 +468,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
-            <div class="card-body ms-5">
+            <div class="card-body card-body-shadow ms-5">
               <h5 class="card-title"><i class="uil uil-web-grid h1 text-primary"></i><br> Ui/Ux <br> Desiner</h5><br>
               <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#uxui" aria-controls="uxui">View more <i class="uil uil-arrow-right"></i></button>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="uxui" aria-labelledby="dropLabeluxix">
@@ -471,7 +485,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <div class="card-body ms-5">
+            <div class="card-body card-body-shadow ms-5">
               <h5 class="card-title"><i class="uil uil-pen h1 text-primary"></i><br> Frontend <br> Developer</h5><br>
               <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#frontend" aria-controls="frontend">View more <i class="uil uil-arrow-right"></i></button>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="frontend" aria-labelledby="BackdropLabelfront">
@@ -488,7 +502,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <div class="card-body ms-5">
+            <div class="card-body card-body-shadow ms-5">
               <h5 class="card-title"> <i class="uil uil-arrow h1 text-primary"></i><br> Backend <br> Developer</h5><br>
               <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#backend" aria-controls="backend">View more <i class="uil uil-arrow-right"></i></button>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="backend" aria-labelledby="BackdropLabelbackend">
@@ -511,63 +525,150 @@
     <section class="portfoliopage container align-items-center justify-content-center vh-100 pt-md-5 mb-5" id="portfolio">
       <h1 class="text-center mt-5">Portfolio</h1>
       <p class="lead text-center text-secondary mb-5">Most recent work</p>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div class="owl-carousel owl-one owl-theme">
+        <div class="item">
+          <h4>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <img
+                    src="./img/Leon.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title h1"><br> Leon Website</h5>
+                    <p class="card-text text-secondary lead">
+                     website adaptable to all devices, with ui components and animated interactions. <br><br>
+                    </p>
+                    <a href="https://haithamassoli.github.io/Leon-WebSite/">
+                      <button type="button" class="btn btn-outline-primary">Demo <i class="uil uil-arrow-right text-primary"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </h4>
         </div>
-        
-        <div class="carousel-inner position-relative">
-          <div class="carousel-item active filter">
-            <img src="./img/Never Stop.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Never-Stop</h5>
-              <p class="lead">website adaptable to all devices, with ui components and animated interactions.</p>
-              <a href="https://haithamassoli.github.io/Never-Stop/">
-                <button type="button" class="btn btn-outline-light">Demo <i class="uil uil-arrow-right"></i></button>
-              </a>
+        <div class="item">
+          <h4>
+            <div class="card mb-3"">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <img
+                    src="./img/Moon Light.jpg"
+                    class="img-fluid rounded-start w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title h1"><br> Moon Light</h5>
+                    <p class="lead card-text text-secondary"> Parallax Scrolling website adaptable to all devices, with ui components and animated interactions. <br><br></p>
+                    <a href="https://haithamassoli.github.io/Parallax-Scrolling-JS/">
+                      <button type="button" class="btn btn-outline-primary">Demo <i class="uil uil-arrow-right text-primary"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item filter">
-            <img src="./img/Moon Light.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Moon Light</h5>
-              <p class="lead">Parallax Scrolling website adaptable to all devices, with ui components and animated interactions.</p>
-              <a href="https://haithamassoli.github.io/Parallax-Scrolling-JS/">
-                <button type="button" class="btn btn-outline-light">Demo <i class="uil uil-arrow-right"></i></button>
-              </a>
-            </div>
-          </div>
-          <div class="carousel-item filter">
-            <img src="./img/Leon.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Leon</h5>
-              <p class="lead">website adaptable to all devices, with ui components and animated interactions.</p>
-              <a href="https://haithamassoli.github.io/Leon-WebSite/">
-                <button type="button" class="btn btn-outline-light">Demo <i class="uil uil-arrow-right"></i></button>
-              </a>
-            </div>
-          </div>
-          
+          </h4>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-        <div class="col-6">
-          <h3></h3>
-          <p class="lead"></p>
-          <a href="https://haithamassoli.github.io/Parallax-Scrolling-JS/"></a>
+        <div class="item">
+          <h4>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <img
+                    src="./img/Never Stop.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title h1"><br> Never Stop</h5>
+                    <p class="card-text lead text-secondary">
+                      website adaptable to all devices, with ui components and animated interactions. <br><br>
+                    </p>
+                    <a href="https://haithamassoli.github.io/Never-Stop/">
+                      <button type="button" class="btn btn-outline-primary">Demo <i class="uil uil-arrow-right text-primary"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </h4>
+        </div>
       </div>
     </section>
     <!-- End Portfolio -->
+
+    <!-- Start Testimonial -->
+    <section class="testimonialpage container align-items-center justify-content-center vh-100 pt-md-5 mb-5" id="testimonial">
+      <h1 class="text-center mt-5">Testimonial</h1>
+      <p class="lead text-center text-secondary mb-5">My client saying</p>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><h4>1</h4></div>
+        <div class="item"><h4>2</h4></div>
+        <div class="item"><h4>3</h4></div>
+        <div class="item"><h4>4</h4></div>
+        <div class="item"><h4>5</h4></div>
+        <div class="item"><h4>6</h4></div>
+    </div>
+    </section>
+    <!-- End Testimonial -->
     <!-- <img class="heart " width="40px" src="./img/heart.gif" alt=""> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-one").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+
+      $('.loop').owlCarousel({
+        center: true,
+        items:2,
+        loop:true,
+        margin:10,
+        responsive:{
+            600:{
+                items:4
+            }
+        }
+    });
+    $('.nonloop').owlCarousel({
+        center: true,
+        items:2,
+        loop:false,
+        margin:10,
+        responsive:{
+            600:{
+                items:4
+            }
+        }
+    });
+    </script>
   </body>
 </html>
