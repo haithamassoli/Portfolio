@@ -201,13 +201,10 @@
   height: 200px;
   box-shadow: 10px 10px 12px -8px #888;
   transition: 1s;
-  overflow: hidden;
 }
 
 .card-body-shadow:hover {
   background-color: rgba(175, 200, 238, 0.4);
-  transform: scaleX(1.1);
-  transform: rotate(3deg);
 }
 
 .card-body-shadow:hover h5 {
@@ -234,7 +231,7 @@
   color: #0d6efd;
 }
 /* End card page */
-/* Start form */
+
 .sendbtn {
   margin-bottom: 100px;
 }
@@ -245,11 +242,8 @@
   background-color: rgb(175, 200, 238);
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
-/* End fprm */
 
-/* Start footer */
 footer {
   background: url(../img/footer-blob.svg) no-repeat center bottom;
   background-size: cover;
 }
-/* End footer*/
