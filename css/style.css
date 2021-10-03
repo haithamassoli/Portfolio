@@ -99,8 +99,10 @@
 
 /* Start home page */
 .homepage {
-  margin-top: 150px;
+  background: url(../img/layered-waves-haikei.svg) no-repeat center bottom;
+  background-size: cover;
 }
+
 .home__blob {
   fill: #3d5e91;
 }
@@ -117,17 +119,29 @@
 }
 /* End home page */
 
+/* Start About */
+.haitham01 {
+  border-radius: 0% 44% 100% 100% / 0% 79% 0% 100%;
+}
+/* Start About */
+
 /* Start skills page */
 .progress {
   height: 3px;
 }
 
 .skillpage {
-  margin-top: 20em;
+  background: url(../img/undraw_programming_2svr.svg) no-repeat center bottom;
+  background-size: 40%;
 }
 /* End skills page */
 
 /* Start Qualification */
+.qualificationtpage {
+  background: url(../img/blob-haikei.svg) no-repeat center bottom;
+  background-size: cover;
+}
+
 .qualificationtpage .lineCercle {
   height: 400px;
   width: 1px;
@@ -190,3 +204,19 @@
   box-shadow: 15px 18px 7px -12px #888;
 }
 /* End card page */
+
+.sendbtn {
+  margin-bottom: 100px;
+}
+
+.form-control {
+  outline: none;
+  border: none;
+  background-color: rgb(175, 200, 238);
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+footer {
+  background: url(../img/footer-blob.svg) no-repeat center bottom;
+  background-size: cover;
+}
