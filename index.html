@@ -1,455 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="shortcut icon" href="./img/star.ico" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-  </head>
-  <body>
-    <!-- Start NavBar -->
-    <nav class="navbar navbar-expand-lg d-none d-sm-block bg-primary navbar-light text-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><svg
-            class="logoanim"
-            id="logo"
-            width="612"
-            height="122"
-            viewBox="0 0 612 122"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="H"
-              d="M82.416 14.632V115H69.312V69.496H18.192V115H5.08801V14.632H18.192V58.696H69.312V14.632H82.416Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="a"
-              d="M99.8951 75.256C99.8951 67.192 101.527 60.136 104.791 54.088C108.055 47.944 112.519 43.192 118.183 39.832C123.943 36.472 130.327 34.792 137.335 34.792C144.247 34.792 150.247 36.28 155.335 39.256C160.423 42.232 164.215 45.976 166.711 50.488V36.088H179.959V115H166.711V100.312C164.119 104.92 160.231 108.76 155.047 111.832C149.959 114.808 144.007 116.296 137.191 116.296C130.183 116.296 123.847 114.568 118.183 111.112C112.519 107.656 108.055 102.808 104.791 96.568C101.527 90.328 99.8951 83.224 99.8951 75.256ZM166.711 75.4C166.711 69.448 165.511 64.264 163.111 59.848C160.711 55.432 157.447 52.072 153.319 49.768C149.287 47.368 144.823 46.168 139.927 46.168C135.031 46.168 130.567 47.32 126.535 49.624C122.503 51.928 119.287 55.288 116.887 59.704C114.487 64.12 113.287 69.304 113.287 75.256C113.287 81.304 114.487 86.584 116.887 91.096C119.287 95.512 122.503 98.92 126.535 101.32C130.567 103.624 135.031 104.776 139.927 104.776C144.823 104.776 149.287 103.624 153.319 101.32C157.447 98.92 160.711 95.512 163.111 91.096C165.511 86.584 166.711 81.352 166.711 75.4Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="i"
-              d="M208.872 23.272C206.376 23.272 204.264 22.408 202.536 20.68C200.808 18.952 199.944 16.84 199.944 14.344C199.944 11.848 200.808 9.736 202.536 8.008C204.264 6.27999 206.376 5.41599 208.872 5.41599C211.272 5.41599 213.288 6.27999 214.92 8.008C216.648 9.736 217.512 11.848 217.512 14.344C217.512 16.84 216.648 18.952 214.92 20.68C213.288 22.408 211.272 23.272 208.872 23.272ZM215.208 36.088V115H202.104V36.088H215.208Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="t"
-              d="M253.525 46.888V93.4C253.525 97.24 254.341 99.976 255.973 101.608C257.605 103.144 260.437 103.912 264.469 103.912H274.117V115H262.309C255.013 115 249.541 113.32 245.893 109.96C242.245 106.6 240.421 101.08 240.421 93.4V46.888H230.197V36.088H240.421V16.216H253.525V36.088H274.117V46.888H253.525Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="h"
-              d="M329.162 34.648C335.114 34.648 340.49 35.944 345.29 38.536C350.09 41.032 353.834 44.824 356.522 49.912C359.306 55 360.698 61.192 360.698 68.488V115H347.738V70.36C347.738 62.488 345.77 56.488 341.834 52.36C337.898 48.136 332.522 46.024 325.706 46.024C318.794 46.024 313.274 48.184 309.146 52.504C305.114 56.824 303.098 63.112 303.098 71.368V115H289.994V8.44H303.098V47.32C305.69 43.288 309.242 40.168 313.754 37.96C318.362 35.752 323.498 34.648 329.162 34.648Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="a"
-              d="M377.208 75.256C377.208 67.192 378.84 60.136 382.104 54.088C385.368 47.944 389.832 43.192 395.496 39.832C401.256 36.472 407.64 34.792 414.648 34.792C421.56 34.792 427.56 36.28 432.648 39.256C437.736 42.232 441.528 45.976 444.024 50.488V36.088H457.272V115H444.024V100.312C441.432 104.92 437.544 108.76 432.36 111.832C427.272 114.808 421.32 116.296 414.504 116.296C407.496 116.296 401.16 114.568 395.496 111.112C389.832 107.656 385.368 102.808 382.104 96.568C378.84 90.328 377.208 83.224 377.208 75.256ZM444.024 75.4C444.024 69.448 442.824 64.264 440.424 59.848C438.024 55.432 434.76 52.072 430.632 49.768C426.6 47.368 422.136 46.168 417.24 46.168C412.344 46.168 407.88 47.32 403.848 49.624C399.816 51.928 396.6 55.288 394.2 59.704C391.8 64.12 390.6 69.304 390.6 75.256C390.6 81.304 391.8 86.584 394.2 91.096C396.6 95.512 399.816 98.92 403.848 101.32C407.88 103.624 412.344 104.776 417.24 104.776C422.136 104.776 426.6 103.624 430.632 101.32C434.76 98.92 438.024 95.512 440.424 91.096C442.824 86.584 444.024 81.352 444.024 75.4Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="m"
-              d="M574.312 34.648C580.456 34.648 585.928 35.944 590.728 38.536C595.528 41.032 599.32 44.824 602.104 49.912C604.888 55 606.28 61.192 606.28 68.488V115H593.32V70.36C593.32 62.488 591.352 56.488 587.416 52.36C583.576 48.136 578.344 46.024 571.72 46.024C564.904 46.024 559.48 48.232 555.448 52.648C551.416 56.968 549.4 63.256 549.4 71.512V115H536.44V70.36C536.44 62.488 534.472 56.488 530.536 52.36C526.696 48.136 521.464 46.024 514.84 46.024C508.024 46.024 502.6 48.232 498.568 52.648C494.536 56.968 492.52 63.256 492.52 71.512V115H479.416V36.088H492.52V47.464C495.112 43.336 498.568 40.168 502.888 37.96C507.304 35.752 512.152 34.648 517.432 34.648C524.056 34.648 529.912 36.136 535 39.112C540.088 42.088 543.88 46.456 546.376 52.216C548.584 46.648 552.232 42.328 557.32 39.256C562.408 36.184 568.072 34.648 574.312 34.648Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            /></svg
-        ></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav ms-auto mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#contact">Contact me</a>
-            </li>
-            <li class="nav-item dropdown"></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- navbar for mobile -->
-    <nav class="navbar navbar-expand-lg d-sm-none bg-primary navbar-light text-light fixed-bottom">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><svg
-            class="logoanim"
-            id="logo"
-            width="612"
-            height="122"
-            viewBox="0 0 612 122"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="H"
-              d="M82.416 14.632V115H69.312V69.496H18.192V115H5.08801V14.632H18.192V58.696H69.312V14.632H82.416Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="a"
-              d="M99.8951 75.256C99.8951 67.192 101.527 60.136 104.791 54.088C108.055 47.944 112.519 43.192 118.183 39.832C123.943 36.472 130.327 34.792 137.335 34.792C144.247 34.792 150.247 36.28 155.335 39.256C160.423 42.232 164.215 45.976 166.711 50.488V36.088H179.959V115H166.711V100.312C164.119 104.92 160.231 108.76 155.047 111.832C149.959 114.808 144.007 116.296 137.191 116.296C130.183 116.296 123.847 114.568 118.183 111.112C112.519 107.656 108.055 102.808 104.791 96.568C101.527 90.328 99.8951 83.224 99.8951 75.256ZM166.711 75.4C166.711 69.448 165.511 64.264 163.111 59.848C160.711 55.432 157.447 52.072 153.319 49.768C149.287 47.368 144.823 46.168 139.927 46.168C135.031 46.168 130.567 47.32 126.535 49.624C122.503 51.928 119.287 55.288 116.887 59.704C114.487 64.12 113.287 69.304 113.287 75.256C113.287 81.304 114.487 86.584 116.887 91.096C119.287 95.512 122.503 98.92 126.535 101.32C130.567 103.624 135.031 104.776 139.927 104.776C144.823 104.776 149.287 103.624 153.319 101.32C157.447 98.92 160.711 95.512 163.111 91.096C165.511 86.584 166.711 81.352 166.711 75.4Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="i"
-              d="M208.872 23.272C206.376 23.272 204.264 22.408 202.536 20.68C200.808 18.952 199.944 16.84 199.944 14.344C199.944 11.848 200.808 9.736 202.536 8.008C204.264 6.27999 206.376 5.41599 208.872 5.41599C211.272 5.41599 213.288 6.27999 214.92 8.008C216.648 9.736 217.512 11.848 217.512 14.344C217.512 16.84 216.648 18.952 214.92 20.68C213.288 22.408 211.272 23.272 208.872 23.272ZM215.208 36.088V115H202.104V36.088H215.208Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="t"
-              d="M253.525 46.888V93.4C253.525 97.24 254.341 99.976 255.973 101.608C257.605 103.144 260.437 103.912 264.469 103.912H274.117V115H262.309C255.013 115 249.541 113.32 245.893 109.96C242.245 106.6 240.421 101.08 240.421 93.4V46.888H230.197V36.088H240.421V16.216H253.525V36.088H274.117V46.888H253.525Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="h"
-              d="M329.162 34.648C335.114 34.648 340.49 35.944 345.29 38.536C350.09 41.032 353.834 44.824 356.522 49.912C359.306 55 360.698 61.192 360.698 68.488V115H347.738V70.36C347.738 62.488 345.77 56.488 341.834 52.36C337.898 48.136 332.522 46.024 325.706 46.024C318.794 46.024 313.274 48.184 309.146 52.504C305.114 56.824 303.098 63.112 303.098 71.368V115H289.994V8.44H303.098V47.32C305.69 43.288 309.242 40.168 313.754 37.96C318.362 35.752 323.498 34.648 329.162 34.648Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="a"
-              d="M377.208 75.256C377.208 67.192 378.84 60.136 382.104 54.088C385.368 47.944 389.832 43.192 395.496 39.832C401.256 36.472 407.64 34.792 414.648 34.792C421.56 34.792 427.56 36.28 432.648 39.256C437.736 42.232 441.528 45.976 444.024 50.488V36.088H457.272V115H444.024V100.312C441.432 104.92 437.544 108.76 432.36 111.832C427.272 114.808 421.32 116.296 414.504 116.296C407.496 116.296 401.16 114.568 395.496 111.112C389.832 107.656 385.368 102.808 382.104 96.568C378.84 90.328 377.208 83.224 377.208 75.256ZM444.024 75.4C444.024 69.448 442.824 64.264 440.424 59.848C438.024 55.432 434.76 52.072 430.632 49.768C426.6 47.368 422.136 46.168 417.24 46.168C412.344 46.168 407.88 47.32 403.848 49.624C399.816 51.928 396.6 55.288 394.2 59.704C391.8 64.12 390.6 69.304 390.6 75.256C390.6 81.304 391.8 86.584 394.2 91.096C396.6 95.512 399.816 98.92 403.848 101.32C407.88 103.624 412.344 104.776 417.24 104.776C422.136 104.776 426.6 103.624 430.632 101.32C434.76 98.92 438.024 95.512 440.424 91.096C442.824 86.584 444.024 81.352 444.024 75.4Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            />
-            <path
-              id="m"
-              d="M574.312 34.648C580.456 34.648 585.928 35.944 590.728 38.536C595.528 41.032 599.32 44.824 602.104 49.912C604.888 55 606.28 61.192 606.28 68.488V115H593.32V70.36C593.32 62.488 591.352 56.488 587.416 52.36C583.576 48.136 578.344 46.024 571.72 46.024C564.904 46.024 559.48 48.232 555.448 52.648C551.416 56.968 549.4 63.256 549.4 71.512V115H536.44V70.36C536.44 62.488 534.472 56.488 530.536 52.36C526.696 48.136 521.464 46.024 514.84 46.024C508.024 46.024 502.6 48.232 498.568 52.648C494.536 56.968 492.52 63.256 492.52 71.512V115H479.416V36.088H492.52V47.464C495.112 43.336 498.568 40.168 502.888 37.96C507.304 35.752 512.152 34.648 517.432 34.648C524.056 34.648 529.912 36.136 535 39.112C540.088 42.088 543.88 46.456 546.376 52.216C548.584 46.648 552.232 42.328 557.32 39.256C562.408 36.184 568.072 34.648 574.312 34.648Z"
-              stroke="white"
-              stroke-width="5"
-              mask="url(#path-1-outside-1)"
-            /></svg
-        ></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse navbar-right"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#contact">Contact me</a>
-            </li>
-            <li class="nav-item dropdown"></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- end navber  -->
 
-    <!-- Start Home -->
-    <section class="homepage position-relative vh-100 mt-5 pt-md-5" id="home">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-2 mt-5">
-            <a
-              class="col-12 align-self-end"
-              target="_blanck"
-              href="https://www.linkedin.com/in/haitham-assoli-b69706a9/"
-              ><i class="uil uil-linkedin h1"></i>
-            </a><br>
-            <a
-              class="col-12 align-self-center"
-              target="_blanck"
-              href="https://github.com/haithamassoli"
-              ><i class="uil uil-github h1"></i>
-            </a><br>
-            <a
-              class="col-12 align-self-start"
-              target="_blanck"
-              href="https://www.facebook.com/assoli.55/">
-              <i class="uil uil-facebook h1"></i>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="shortcut icon" href="./img/star.ico" />
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> </head>
+
+<body>
+	<!-- Start NavBar -->
+	<nav class="navbar navbar-expand-lg d-none d-sm-block bg-primary navbar-light text-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<svg class="logoanim" id="logo" width="612" height="122" viewBox="0 0 612 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path id="H" d="M82.416 14.632V115H69.312V69.496H18.192V115H5.08801V14.632H18.192V58.696H69.312V14.632H82.416Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="a" d="M99.8951 75.256C99.8951 67.192 101.527 60.136 104.791 54.088C108.055 47.944 112.519 43.192 118.183 39.832C123.943 36.472 130.327 34.792 137.335 34.792C144.247 34.792 150.247 36.28 155.335 39.256C160.423 42.232 164.215 45.976 166.711 50.488V36.088H179.959V115H166.711V100.312C164.119 104.92 160.231 108.76 155.047 111.832C149.959 114.808 144.007 116.296 137.191 116.296C130.183 116.296 123.847 114.568 118.183 111.112C112.519 107.656 108.055 102.808 104.791 96.568C101.527 90.328 99.8951 83.224 99.8951 75.256ZM166.711 75.4C166.711 69.448 165.511 64.264 163.111 59.848C160.711 55.432 157.447 52.072 153.319 49.768C149.287 47.368 144.823 46.168 139.927 46.168C135.031 46.168 130.567 47.32 126.535 49.624C122.503 51.928 119.287 55.288 116.887 59.704C114.487 64.12 113.287 69.304 113.287 75.256C113.287 81.304 114.487 86.584 116.887 91.096C119.287 95.512 122.503 98.92 126.535 101.32C130.567 103.624 135.031 104.776 139.927 104.776C144.823 104.776 149.287 103.624 153.319 101.32C157.447 98.92 160.711 95.512 163.111 91.096C165.511 86.584 166.711 81.352 166.711 75.4Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="i" d="M208.872 23.272C206.376 23.272 204.264 22.408 202.536 20.68C200.808 18.952 199.944 16.84 199.944 14.344C199.944 11.848 200.808 9.736 202.536 8.008C204.264 6.27999 206.376 5.41599 208.872 5.41599C211.272 5.41599 213.288 6.27999 214.92 8.008C216.648 9.736 217.512 11.848 217.512 14.344C217.512 16.84 216.648 18.952 214.92 20.68C213.288 22.408 211.272 23.272 208.872 23.272ZM215.208 36.088V115H202.104V36.088H215.208Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="t" d="M253.525 46.888V93.4C253.525 97.24 254.341 99.976 255.973 101.608C257.605 103.144 260.437 103.912 264.469 103.912H274.117V115H262.309C255.013 115 249.541 113.32 245.893 109.96C242.245 106.6 240.421 101.08 240.421 93.4V46.888H230.197V36.088H240.421V16.216H253.525V36.088H274.117V46.888H253.525Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="h" d="M329.162 34.648C335.114 34.648 340.49 35.944 345.29 38.536C350.09 41.032 353.834 44.824 356.522 49.912C359.306 55 360.698 61.192 360.698 68.488V115H347.738V70.36C347.738 62.488 345.77 56.488 341.834 52.36C337.898 48.136 332.522 46.024 325.706 46.024C318.794 46.024 313.274 48.184 309.146 52.504C305.114 56.824 303.098 63.112 303.098 71.368V115H289.994V8.44H303.098V47.32C305.69 43.288 309.242 40.168 313.754 37.96C318.362 35.752 323.498 34.648 329.162 34.648Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="a" d="M377.208 75.256C377.208 67.192 378.84 60.136 382.104 54.088C385.368 47.944 389.832 43.192 395.496 39.832C401.256 36.472 407.64 34.792 414.648 34.792C421.56 34.792 427.56 36.28 432.648 39.256C437.736 42.232 441.528 45.976 444.024 50.488V36.088H457.272V115H444.024V100.312C441.432 104.92 437.544 108.76 432.36 111.832C427.272 114.808 421.32 116.296 414.504 116.296C407.496 116.296 401.16 114.568 395.496 111.112C389.832 107.656 385.368 102.808 382.104 96.568C378.84 90.328 377.208 83.224 377.208 75.256ZM444.024 75.4C444.024 69.448 442.824 64.264 440.424 59.848C438.024 55.432 434.76 52.072 430.632 49.768C426.6 47.368 422.136 46.168 417.24 46.168C412.344 46.168 407.88 47.32 403.848 49.624C399.816 51.928 396.6 55.288 394.2 59.704C391.8 64.12 390.6 69.304 390.6 75.256C390.6 81.304 391.8 86.584 394.2 91.096C396.6 95.512 399.816 98.92 403.848 101.32C407.88 103.624 412.344 104.776 417.24 104.776C422.136 104.776 426.6 103.624 430.632 101.32C434.76 98.92 438.024 95.512 440.424 91.096C442.824 86.584 444.024 81.352 444.024 75.4Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="m" d="M574.312 34.648C580.456 34.648 585.928 35.944 590.728 38.536C595.528 41.032 599.32 44.824 602.104 49.912C604.888 55 606.28 61.192 606.28 68.488V115H593.32V70.36C593.32 62.488 591.352 56.488 587.416 52.36C583.576 48.136 578.344 46.024 571.72 46.024C564.904 46.024 559.48 48.232 555.448 52.648C551.416 56.968 549.4 63.256 549.4 71.512V115H536.44V70.36C536.44 62.488 534.472 56.488 530.536 52.36C526.696 48.136 521.464 46.024 514.84 46.024C508.024 46.024 502.6 48.232 498.568 52.648C494.536 56.968 492.52 63.256 492.52 71.512V115H479.416V36.088H492.52V47.464C495.112 43.336 498.568 40.168 502.888 37.96C507.304 35.752 512.152 34.648 517.432 34.648C524.056 34.648 529.912 36.136 535 39.112C540.088 42.088 543.88 46.456 546.376 52.216C548.584 46.648 552.232 42.328 557.32 39.256C562.408 36.184 568.072 34.648 574.312 34.648Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+				</svg>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-lg-0">
+					<li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="#home">Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a> </li>
+					<li class="nav-item"> <a class="nav-link text-light" href="#skills">Skills</a> </li>
+					<li class="nav-item"> <a class="nav-link text-light" href="#services">Services</a> </li>
+					<li class="nav-item"> <a class="nav-link text-light" href="#portfolio">Portfolio</a> </li>
+					<li class="nav-item"> <a class="nav-link text-light" href="#contact">Contact me</a> </li>
+					<li class="nav-item dropdown"></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- navbar for mobile -->
+	<nav class="navbar navbar-expand-lg d-sm-none bg-primary navbar-light text-light fixed-bottom">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<svg class="logoanim" id="logo" width="612" height="122" viewBox="0 0 612 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path id="H" d="M82.416 14.632V115H69.312V69.496H18.192V115H5.08801V14.632H18.192V58.696H69.312V14.632H82.416Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="a" d="M99.8951 75.256C99.8951 67.192 101.527 60.136 104.791 54.088C108.055 47.944 112.519 43.192 118.183 39.832C123.943 36.472 130.327 34.792 137.335 34.792C144.247 34.792 150.247 36.28 155.335 39.256C160.423 42.232 164.215 45.976 166.711 50.488V36.088H179.959V115H166.711V100.312C164.119 104.92 160.231 108.76 155.047 111.832C149.959 114.808 144.007 116.296 137.191 116.296C130.183 116.296 123.847 114.568 118.183 111.112C112.519 107.656 108.055 102.808 104.791 96.568C101.527 90.328 99.8951 83.224 99.8951 75.256ZM166.711 75.4C166.711 69.448 165.511 64.264 163.111 59.848C160.711 55.432 157.447 52.072 153.319 49.768C149.287 47.368 144.823 46.168 139.927 46.168C135.031 46.168 130.567 47.32 126.535 49.624C122.503 51.928 119.287 55.288 116.887 59.704C114.487 64.12 113.287 69.304 113.287 75.256C113.287 81.304 114.487 86.584 116.887 91.096C119.287 95.512 122.503 98.92 126.535 101.32C130.567 103.624 135.031 104.776 139.927 104.776C144.823 104.776 149.287 103.624 153.319 101.32C157.447 98.92 160.711 95.512 163.111 91.096C165.511 86.584 166.711 81.352 166.711 75.4Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="i" d="M208.872 23.272C206.376 23.272 204.264 22.408 202.536 20.68C200.808 18.952 199.944 16.84 199.944 14.344C199.944 11.848 200.808 9.736 202.536 8.008C204.264 6.27999 206.376 5.41599 208.872 5.41599C211.272 5.41599 213.288 6.27999 214.92 8.008C216.648 9.736 217.512 11.848 217.512 14.344C217.512 16.84 216.648 18.952 214.92 20.68C213.288 22.408 211.272 23.272 208.872 23.272ZM215.208 36.088V115H202.104V36.088H215.208Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="t" d="M253.525 46.888V93.4C253.525 97.24 254.341 99.976 255.973 101.608C257.605 103.144 260.437 103.912 264.469 103.912H274.117V115H262.309C255.013 115 249.541 113.32 245.893 109.96C242.245 106.6 240.421 101.08 240.421 93.4V46.888H230.197V36.088H240.421V16.216H253.525V36.088H274.117V46.888H253.525Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="h" d="M329.162 34.648C335.114 34.648 340.49 35.944 345.29 38.536C350.09 41.032 353.834 44.824 356.522 49.912C359.306 55 360.698 61.192 360.698 68.488V115H347.738V70.36C347.738 62.488 345.77 56.488 341.834 52.36C337.898 48.136 332.522 46.024 325.706 46.024C318.794 46.024 313.274 48.184 309.146 52.504C305.114 56.824 303.098 63.112 303.098 71.368V115H289.994V8.44H303.098V47.32C305.69 43.288 309.242 40.168 313.754 37.96C318.362 35.752 323.498 34.648 329.162 34.648Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="a" d="M377.208 75.256C377.208 67.192 378.84 60.136 382.104 54.088C385.368 47.944 389.832 43.192 395.496 39.832C401.256 36.472 407.64 34.792 414.648 34.792C421.56 34.792 427.56 36.28 432.648 39.256C437.736 42.232 441.528 45.976 444.024 50.488V36.088H457.272V115H444.024V100.312C441.432 104.92 437.544 108.76 432.36 111.832C427.272 114.808 421.32 116.296 414.504 116.296C407.496 116.296 401.16 114.568 395.496 111.112C389.832 107.656 385.368 102.808 382.104 96.568C378.84 90.328 377.208 83.224 377.208 75.256ZM444.024 75.4C444.024 69.448 442.824 64.264 440.424 59.848C438.024 55.432 434.76 52.072 430.632 49.768C426.6 47.368 422.136 46.168 417.24 46.168C412.344 46.168 407.88 47.32 403.848 49.624C399.816 51.928 396.6 55.288 394.2 59.704C391.8 64.12 390.6 69.304 390.6 75.256C390.6 81.304 391.8 86.584 394.2 91.096C396.6 95.512 399.816 98.92 403.848 101.32C407.88 103.624 412.344 104.776 417.24 104.776C422.136 104.776 426.6 103.624 430.632 101.32C434.76 98.92 438.024 95.512 440.424 91.096C442.824 86.584 444.024 81.352 444.024 75.4Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+					<path id="m" d="M574.312 34.648C580.456 34.648 585.928 35.944 590.728 38.536C595.528 41.032 599.32 44.824 602.104 49.912C604.888 55 606.28 61.192 606.28 68.488V115H593.32V70.36C593.32 62.488 591.352 56.488 587.416 52.36C583.576 48.136 578.344 46.024 571.72 46.024C564.904 46.024 559.48 48.232 555.448 52.648C551.416 56.968 549.4 63.256 549.4 71.512V115H536.44V70.36C536.44 62.488 534.472 56.488 530.536 52.36C526.696 48.136 521.464 46.024 514.84 46.024C508.024 46.024 502.6 48.232 498.568 52.648C494.536 56.968 492.52 63.256 492.52 71.512V115H479.416V36.088H492.52V47.464C495.112 43.336 498.568 40.168 502.888 37.96C507.304 35.752 512.152 34.648 517.432 34.648C524.056 34.648 529.912 36.136 535 39.112C540.088 42.088 543.88 46.456 546.376 52.216C548.584 46.648 552.232 42.328 557.32 39.256C562.408 36.184 568.072 34.648 574.312 34.648Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)" />
+				</svg>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+			<div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="#home">Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a> </li>
+					<li class="nav-item"> <a class="nav-link text-light" href="#skills">Skills</a> </li>
+					<li class="nav-item"> <a class="nav-link text-light" href="#services">Services</a> </li>
+					<li class="nav-item"> <a class="nav-link text-light" href="#portfolio">Portfolio</a> </li>
+					<li class="nav-item"> <a class="nav-link text-light" href="#contact">Contact me</a> </li>
+					<li class="nav-item dropdown"></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end navber  -->
+	<!-- Start Home -->
+	<section class="homepage position-relative vh-100 mt-5 pt-md-5" id="home">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-2 mt-5"> <a class="col-12 align-self-end" target="_blanck" href="https://www.linkedin.com/in/haitham-assoli-b69706a9/"><i class="uil uil-linkedin h1"></i>
             </a>
-          </div>
-          <div class="col-md-5 col-xs-10 home__about">
-            <h1 class="mt-5">Hi I'am Haitham</h1>
-            <h3 class="mt-2">Full Stack Developer</h3>
-            <p class="lead mt-3">
-              High level experience in web design and development knowledge,
-              producing quality work.
-            </p>
-            <button type="button" class="btn btn-primary mt-5 mb-5">
-              Contact Me<i class="uil uil-message"></i>
-            </button>
-          </div>
-
-          <div class="col-md-5 col-xs-10  position-relative home__img overflow-heddin">
-            <svg
-              class="home__blob"
-              viewBox="0 0 200 187"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <mask id="mask0" mask-type="alpha">
-                <path
-                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+					<br> <a class="col-12 align-self-center" target="_blanck" href="https://github.com/haithamassoli"><i class="uil uil-github h1"></i>
+            </a>
+					<br>
+					<a class="col-12 align-self-start" target="_blanck" href="https://www.facebook.com/assoli.55/"> <i class="uil uil-facebook h1"></i> </a>
+				</div>
+				<div class="col-md-5 col-xs-10 home__about">
+					<h1 class="mt-5">Hi I'am Haitham</h1>
+					<h3 class="mt-2">Full Stack Developer</h3>
+					<p class="lead mt-3"> High level experience in web design and development knowledge, producing quality work. </p>
+					<button type="button" class="btn btn-outline-dark mt-5 mb-5"> Contact Me<i class="uil uil-message"></i> </button>
+				</div>
+				<div class="col-md-5 col-xs-10  position-relative home__img overflow-heddin">
+					<svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mask id="mask0" mask-type="alpha">
+							<path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                   130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                   97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-              </mask>
-              <g mask="url(#mask0)">
-                <path
-                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" /> </mask>
+						<g mask="url(#mask0)">
+							<path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                   165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                   129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                <image class="w-100" x="8" href="./img/Haitham.png" />
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <a href="#about"><i class="position-absolute translate-middle start-50 bottom-15 uil uil-angle-double-down text-light h1"></i></a>
-    </section>
-    <!-- End Home -->
-
-    <!-- Start About Me -->
-    <section class=" aboutpage pt-md-5" id="about">
-      <div class="container">
-      <h1 class="text-center mt-5">About Me</h1>
-      <p class="lead text-center text-secondary mb-5">My introduction</p>
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-6">
-          <img src="./img/Haitham03.jpg" width="100%" class="haitham01 " alt="" />
-        </div>
-        <div class="col-md-6">
-          <p class=" lead text-center mb-5 mt-5">
-            Web developer, wuth extensive knowledge and years of experience,
-            working in web technologies and Ui/Ux design, delivering quality
-            work.
-          </p>
-          <div class="row">
-            <div class="col-4">
-              <h3 class="mt-5 ms-lg-5">01+</h3>
-              <p class="lead ms-lg-5">years<br />experience</p>
-            </div>
-            <div class="col-4">
-              <h3 class="mt-5">20+</h3>
-              <p class="lead">Completed<br />projects</p>
-            </div>
-            <div class="col-4">
-              <h3 class="mt-5">05+</h3>
-              <p class="lead">Companies<br />worked</p>
-            </div>
-          <div class="d-grid col-4 mx-auto mt-3">
-          <a download="" href="https://www.cbs.dk/files/cbs.dk/cv_template_sheet_en.pdf"><button  class="btn btn-outline-light mb-2" type="button">My CV<i class="uil uil-file-download h5"></i></button></a>
-          </div>       
-        </div>
-      </div>
-    </div>
-    </section>
-    <!-- End About Me -->
-
-    <!-- Start skill -->
-    <section class="skillpage pt-md-5 vh-100" id="skills">
-      <div class="container">
-      <h1 class="text-center mt-5">skill</h1>
-      <p class="lead text-center text-secondary mb-5">My technical level</p>
-      <div class="accordion accordion-flush row" id="skill">
-        <div class="accordion-item col-md-6">
-          <h2 class="accordion-header" id="flush-headingOne">
+                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+							<image class="w-100" x="8" href="./img/Haitham.png" /> </g>
+					</svg>
+				</div>
+			</div>
+		</div> <a href="#about"><i class="position-absolute translate-middle start-50 uil uil-angle-double-down text-light h1"></i></a> </section>
+	<!-- End Home -->
+	<!-- Start About Me -->
+	<section class=" aboutpage pt-md-5" id="about">
+		<div class="container">
+			<h1 class="text-center mt-5">About Me</h1>
+			<p class="lead text-center text-secondary mb-5">My introduction</p>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-6"> <img src="./img/Haitham03.jpg" width="100%" class="haitham01 " alt="" /> </div>
+				<div class="col-md-6">
+					<p class=" lead text-center mb-5 mt-5"> Web developer, wuth extensive knowledge and years of experience, working in web technologies and Ui/Ux design, delivering quality work. </p>
+					<div class="row">
+						<div class="col-4">
+							<h3 class="mt-5 ms-lg-5 text-primary">01+</h3>
+							<p class="lead ms-lg-5">years
+								<br />experience</p>
+						</div>
+						<div class="col-4">
+							<h3 class="mt-5 text-primary">20+</h3>
+							<p class="lead">Completed
+								<br />projects</p>
+						</div>
+						<div class="col-4">
+							<h3 class="mt-5 text-primary">05+</h3>
+							<p class="lead">Companies
+								<br />worked</p>
+						</div>
+						<div class="d-grid col-4 mx-auto mt-3">
+							<a download="" href="https://www.cbs.dk/files/cbs.dk/cv_template_sheet_en.pdf">
+								<button class="btn btn-outline-primary mb-2" type="button">My CV<i class="uil uil-file-download h5"></i></button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About Me -->
+	<!-- Start skill -->
+	<section class="skillpage pt-md-5" id="skills">
+		<div class="container">
+			<h1 class="text-center mt-5">Skills</h1>
+			<p class="lead text-center text-secondary mb-5">My technical level</p>
+			<div class="accordion accordion-flush row" id="skill">
+				<div class="accordion-item col-md-6">
+					<h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <i class="uil uil-desktop h1 text-primary"></i> <h6>Frontend developer<br><span class="text-secondary fw-light">More than 5 years</span>
+              <i class="uil uil-desktop h1 text-primary"></i> <h6 class="ms-3">Frontend developer</h6><br><span class="text-secondary fw-light">More than 5 years</span>
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#skill">
-            <div class="accordion-body">
-              <div class="row">
-              <p class="col"><img src="./img/html5.png" alt=""> HTML</p><p class="text-secondary text-end col">99%</p>
-            </div>
-              <div class="progress mb-4">
-                <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="row">
-                <p class="col"><img src="./img/css3.png" alt=""> CSS</p><p class="text-secondary text-end col">93%</p>
-              </div>
-              <div class="progress mb-4">
-                <div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="row">
-                <p class="col"><img src="./img/javascript.gif" alt="" width="48px"> Javascript</p><p class="text-secondary text-end col">80%</p>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item col-md-6">
-          <h2 class="accordion-header" id="flush-headingTwo">
+					<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#skill">
+						<div class="accordion-body">
+							<div class="row">
+								<p class="col"><img src="./img/html5.png" class="me-3" alt=""> HTML</p>
+								<p class="text-secondary text-end col">99%</p>
+							</div>
+							<div class="progress mb-4">
+								<div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row">
+								<p class="col"><img src="./img/css3.png" class="me-3" alt=""> CSS</p>
+								<p class="text-secondary text-end col">93%</p>
+							</div>
+							<div class="progress mb-4">
+								<div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row">
+								<p class="col"><img src="./img/javascript.gif" class="me-3" alt="" width="48px"> Javascript</p>
+								<p class="text-secondary text-end col">80%</p>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item col-md-6">
+					<h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              <i class="uil uil-brackets-curly text-primary h1"></i>  <h6>Backend developer<br><span class="text-secondary fw-light">More than 5 years</span></h6>
+              <i class="uil uil-brackets-curly text-primary h1"></i>  <h6 class="ms-3">Backend developer<br><span class="text-secondary fw-light">More than 5 years</span></h6>
             </button>
           </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#skill">
-            <div class="accordion-body"> <div class="row">
-              <p class="col"><img src="./img/php.png" alt=""> PHP</p><p class="text-secondary text-end col">70%</p>
-            </div>
-              <div class="progress mb-4">
-                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="row">
-                <p class="col"><img src="./img/laravel.png" alt=""> Laravel</p><p class="text-secondary text-end col">40%</p>
-              </div>
-              <div class="progress mb-4">
-                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="row">
-                <p class="col"><img src="./img/python.gif" alt="" width="48px"> Python</p><p class="text-secondary text-end col">60%</p>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div></div>
-          </div>
-        </div>
-        <div class="accordion-item col-md-6">
-          <h2 class="accordion-header" id="flush-headingThree">
+					<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#skill">
+						<div class="accordion-body">
+							<div class="row">
+								<p class="col"><img class="me-3" src="./img/php.png" alt=""> PHP</p>
+								<p class="text-secondary text-end col">70%</p>
+							</div>
+							<div class="progress mb-4">
+								<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row">
+								<p class="col"><img src="./img/laravel.png" class="me-3" alt=""> Laravel</p>
+								<p class="text-secondary text-end col">40%</p>
+							</div>
+							<div class="progress mb-4">
+								<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row">
+								<p class="col"><img src="./img/python.gif" class="me-3" alt="" width="48px"> Python</p>
+								<p class="text-secondary text-end col">60%</p>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item col-md-6">
+					<h2 class="accordion-header" id="flush-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              <i class="uil uil-swatchbook text-primary h1"> </i> <h6> Designer<br><span class="text-secondary fw-light">More than 5 years</span></h6>
+              <i class="uil uil-swatchbook text-primary h1"> </i> <h6 class="ms-3"> Designer<br><span class="text-secondary fw-light">More than 5 years</span></h6>
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#skill">
-            <div class="accordion-body">
-            
-              <div class="row">
-                <p class="col"><img src="./img/sketch.png" alt=""> Sketch</p><p class="text-secondary text-end col">80%</p>
-              </div>
-              <div class="progress mb-4">
-                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="row">
-                <p class="col"><img src="./img/adobe-photoshop.png" alt=""> Photoshop</p><p class="text-secondary text-end col">75%</p>
-              </div>
-              <div class="progress mb-4">
-                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>  <div class="row">
-              <p class="col"><img src="./img/figma.gif" width="48px" alt=""> Figma</p><p class="text-secondary text-end col">95%</p>
-            </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
-    <!-- End skill -->
-
-    <!-- ٍStart Qualification -->
-    <section class="qualificationtpage container align-items-center justify-content-center   pt-md-5" id="qualification">
-      <h1 class="text-center mt-5">Qualification</h1>
-      <p class="lead text-center text-secondary mb-3">My personal journey</p>
-      <div class="row">
-      <h4 class="mt-5 mb-5 text-secondary col-12 text-center"><i class="uil uil-graduation-cap h3"></i>Education & <i class="uil uil-briefcase-alt h3"></i>Work</h3><br>
+					<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#skill">
+						<div class="accordion-body">
+							<div class="row">
+								<p class="col"><img src="./img/sketch.png" class="me-3" alt=""> Sketch</p>
+								<p class="text-secondary text-end col">80%</p>
+							</div>
+							<div class="progress mb-4">
+								<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row">
+								<p class="col"><img src="./img/adobe-photoshop.png" class="me-3" alt=""> Photoshop</p>
+								<p class="text-secondary text-end col">75%</p>
+							</div>
+							<div class="progress mb-4">
+								<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="row">
+								<p class="col"><img src="./img/figma.gif" class="me-3" width="48px" alt=""> Figma</p>
+								<p class="text-secondary text-end col">95%</p>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End skill -->
+	<!-- ٍStart Qualification -->
+	<section class="qualificationtpage container align-items-center justify-content-center   pt-md-5" id="qualification">
+		<h1 class="text-center mt-5">Qualification</h1>
+		<p class="lead text-center text-secondary mb-3">My personal journey</p>
+		<div class="row">
+			<h3 class="mt-5 mb-5 text-secondary col-12 text-center"><i class="uil uil-graduation-cap h3"></i>Education & <i class="uil uil-briefcase-alt h3"></i>Work</h3><br>
         <div class="line d-flex position-relative align-items-center justify-content-center col-12">
         <div class="lineCercle bg-primary start-50 top-50 position-absolute"></div>
         <div class="lineCercleTow bg-primary  position-absolute"></div>
@@ -459,10 +273,8 @@
       <div class="col-7  text-center"><h6>PWC</h6><p class="text-secondary">Amman</p><time class="text-secondary">2022-2024</time></div>
       <div class="col-7 offset-5 text-center"><h6>Sab</h6><p class="text-secondary">KSA - Al-Jubail</p><time class="text-secondary">2024-current</time> </div>
     </div>
-  </div>
     </section>
     <!-- End Qualification -->
-
     <!-- Start services -->
     <section class="servicespage container align-items-center justify-content-center   pt-md-5" id="services">
       <h1 class="text-center mt-5">Services</h1>
@@ -470,8 +282,8 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
-            <div class="card-body card-body-shadow ms-5">
-              <h5 class="card-title"><i class="uil uil-web-grid h1 text-primary"></i><br> Ui/Ux <br> Desiner</h5><br>
+            <div class="card-body card-body-shadow ps-5">
+              <h5 class="card-title"><i class="uil uil-web-grid h1 hovericon"></i><br> Ui/Ux <br> Desiner</h5><br>
               <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#uxui" aria-controls="uxui">View more <i class="uil uil-arrow-right"></i></button>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="uxui" aria-labelledby="dropLabeluxix">
                 <div class="offcanvas-header">
@@ -487,8 +299,8 @@
         </div>
         <div class="col">
           <div class="card">
-            <div class="card-body card-body-shadow ms-5">
-              <h5 class="card-title"><i class="uil uil-pen h1 text-primary"></i><br> Frontend <br> Developer</h5><br>
+            <div class="card-body card-body-shadow ps-5">
+              <h5 class="card-title"><i class="uil uil-pen h1 hovericon"></i><br> Frontend <br> Developer</h5><br>
               <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#frontend" aria-controls="frontend">View more <i class="uil uil-arrow-right"></i></button>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="frontend" aria-labelledby="BackdropLabelfront">
                 <div class="offcanvas-header">
@@ -504,8 +316,8 @@
         </div>
         <div class="col">
           <div class="card">
-            <div class="card-body card-body-shadow ms-5">
-              <h5 class="card-title"> <i class="uil uil-arrow h1 text-primary"></i><br> Backend <br> Developer</h5><br>
+            <div class="card-body card-body-shadow ps-5">
+              <h5 class="card-title"> <i class="uil uil-arrow hovericon h1"></i><br> Backend <br> Developer</h5><br>
               <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#backend" aria-controls="backend">View more <i class="uil uil-arrow-right"></i></button>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="backend" aria-labelledby="BackdropLabelbackend">
                 <div class="offcanvas-header">
@@ -522,40 +334,39 @@
       </div>
     </section>
     <!-- End services -->
-
     <!-- Start Portfolio -->
     <section class="portfoliopage container align-items-center justify-content-center   pt-md-5 mb-5" id="portfolio">
       <h1 class="text-center mt-5">Portfolio</h1>
       <p class="lead text-center text-secondary mb-5">Most recent work</p>
       <div class="owl-carousel owl-one owl-theme">
         <div class="item">
-          <h4>
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-8">
-                  <img
-                    src="./img/Leon.jpg"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-4">
-                  <div class="card-body">
-                    <h5 class="card-title h1"><br> Leon Website</h5>
-                    <p class="card-text text-secondary lead">
-                     website adaptable to all devices, with ui components and animated interactions. <br><br>
-                    </p>
-                    <a href="https://haithamassoli.github.io/Leon-WebSite/">
-                      <button type="button" class="btn btn-outline-primary">Demo <i class="uil uil-arrow-right text-primary"></i></button>
-                    </a>
+					<h4>
+								<div class="card mb-3">
+									<div class="row g-0">
+										<div class="col-md-8">
+											<img
+												src="./img/Never Stop.jpg"
+												class="img-fluid rounded-start"
+												alt="..."
+											/>
+										</div>
+										<div class="col-md-4">
+											<div class="card-body card-body-shadow-tow">
+												<h5 class="card-title h1"><br> Never Stop</h5>
+												<p class="card-text lead text-secondary">
+													website adaptable to all devices, with ui components and animated interactions. <br><br>
+												</p>
+												<a href="https://haithamassoli.github.io/Never-Stop/">
+													<button type="button" class="btn btn-outline-primary">Demo <i class="uil uil-arrow-right text-primary"></i></button>
+												</a>
+				
                   </div>
                 </div>
               </div>
             </div>
-          </h4>
-        </div>
-        <div class="item">
-          <h4>
+          </h4> </div>
+		<div class="item">
+		  <h4>
             <div class="card mb-3"">
               <div class="row g-0">
                 <div class="col-md-8">
@@ -566,7 +377,7 @@
                   />
                 </div>
                 <div class="col-md-4">
-                  <div class="card-body">
+                  <div class="card-body card-body-shadow-tow">
                     <h5 class="card-title h1"><br> Moon Light</h5>
                     <p class="lead card-text text-secondary"> Parallax Scrolling website adaptable to all devices, with ui components and animated interactions. <br><br></p>
                     <a href="https://haithamassoli.github.io/Parallax-Scrolling-JS/">
@@ -576,196 +387,202 @@
                 </div>
               </div>
             </div>
-          </h4>
-        </div>
-        <div class="item">
-          <h4>
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-8">
-                  <img
-                    src="./img/Never Stop.jpg"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-4">
-                  <div class="card-body">
-                    <h5 class="card-title h1"><br> Never Stop</h5>
-                    <p class="card-text lead text-secondary">
-                      website adaptable to all devices, with ui components and animated interactions. <br><br>
-                    </p>
-                    <a href="https://haithamassoli.github.io/Never-Stop/">
-                      <button type="button" class="btn btn-outline-primary">Demo <i class="uil uil-arrow-right text-primary"></i></button>
-                    </a>
+          </h4> </div>
+					<div class="item">
+						<h4>
+							<div class="card mb-3">
+								<div class="row g-0">
+									<div class="col-md-8">
+										<img
+											src="./img/Leon.jpg"
+											class="img-fluid rounded-start"
+											alt="..."
+										/>
+									</div>
+									<div class="col-md-4">
+										<div class="card-body card-body-shadow-tow">
+											<h5 class="card-title h1"><br> Leon Website</h5>
+											<p class="card-text text-secondary lead">
+											 website adaptable to all devices, with ui components and animated interactions. <br><br>
+											</p>
+											<a href="https://haithamassoli.github.io/Leon-WebSite/">
+												<button type="button" class="btn btn-outline-primary">Demo <i class="uil uil-arrow-right text-primary"></i></button>
+											</a>
                   </div>
                 </div>
               </div>
             </div>
-          </h4>
-        </div>
-      </div>
-    </section>
-    <!-- End Portfolio -->
-
-    <!-- Start Testimonial -->
-    <section class="testimonialpage container align-items-center justify-content-center   pt-md-5 mb-5" id="testimonial">
-      <h1 class="text-center mt-5">Testimonial</h1>
-      <p class="lead text-center text-secondary mb-5">My client saying</p>
-      <div class="owl-carousel owl-townonloop owl-towloop owl-tow owl-theme">
-        <div class="item row">
-          <img class="rounded-circle h-25 w-25 col-6" width="100%" src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
-         <div class="col-6 row"><h6 class="col-12">Haitham Assoli</h6>
-        <p class="lead col-12 text-secondary fs-6">Clint</p>
-        </div><p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
-      </div>
-        <div class="item row">
-          <img class="rounded-circle w-25 h-25 col-6" src="https://randomuser.me/api/portraits/men/71.jpg" alt="">
-         <div class="col-6 row"><h6 class="col-12">Haitham Assoli</h6>
-        <p class="lead col-12 text-secondary fs-6">Clint</p>
-        </div><p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
-      </div>
-        <div class="item row">
-          <img class="rounded-circle w-25 h-25 col-6" src="https://randomuser.me/api/portraits/men/15.jpg" alt="">
-         <div class="col-6 row"><h6 class="col-12">Haitham Assoli</h6>
-        <p class="lead col-12 text-secondary fs-6">Clint</p>
-        </div><p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
-      </div>
-        <div class="item row">
-          <img class="rounded-circle w-25 h-25 col-6" src="https://randomuser.me/api/portraits/men/35.jpg" alt="">
-         <div class="col-6 row"><h6 class="col-12">Haitham Assoli</h6>
-        <p class="lead col-12 text-secondary fs-6">Clint</p>
-        </div><p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
-      </div>
-        <div class="item row">
-          <img class="rounded-circle w-25 h-25 col-6" src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
-         <div class="col-6 row"><h6 class="col-12">Haitham Assoli</h6>
-        <p class="lead col-12 text-secondary fs-6">Clint</p>
-        </div><p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
-      </div>
-        <div class="item row">
-          <img class="rounded-circle w-25 h-25 col-6" src="https://randomuser.me/api/portraits/men/55.jpg" alt="">
-         <div class="col-6 row"><h6 class="col-12">Haitham Assoli</h6>
-        <p class="lead col-12 text-secondary fs-6">Clint</p>
-        </div><p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
-      </div>
-    </div>
-    </section>
-    <!-- End Testimonial -->
-
-    <!-- Start Contact -->
-    <section class="contactpage container align-items-center justify-content-center   pt-md-5 mb-5" id="contact">
-      <h1 class="text-center mt-5">Contact Me</h1>
-      <p class="lead text-center text-secondary mb-5">Get in touch</p>
-      <div class="row">
-        <div class="myaddress col-md-6 col-xs-12">
-          <div class="row">
-          <i class="uil uil-phone h1 text-primary col-6"></i>
-          <p class="lead fs-6 col-6">
-            <h4>Call Me</h4>
-            <p class="text-secondary">123-456-789</p>
-          </p>
-            <i class="uil uil-envelope h1 text-primary col-6"></i>
-          <p class="lead fs-6 col-6">
-            <h4>Email</h4>
-            <p class="text-secondary">haitham.b.assoli@gmail.com</p>
-          </p>
-          <i class="uil uil-map-marker h1 text-primary col-6"></i>
-          <p class="lead fs-6 col-6">
-            <h4>Location</h4>
-            <p class="text-secondary">123-456-789</p>
-          </p>
-        </div>
-        </div>
-        <form class="col-md-6 col-xs-12">
-          <div class="row">
-            <div class="mb-3 col-6">
-              <label class="form-label">Name</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div class="mb-3 col-6">
-              <label class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div class="mb-3 col-12">
-              <label for="exampleFormControlTextarea1" class="form-label">Project</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-            </div>
-            <button type="button" class="btn btn-primary sendbtn ms-3 w-50">
-              Send Message<i class="uil uil-message"></i>
-            </button>
-        </div>
-        </form>
-    </section>
-    <!-- End Contact -->
-
-    <!-- Start footer -->
-    <footer class="bg-black text-center py-5">
-      <div class="container px-5">
-        <div class="text-white-50 small">
-          <div class="mb-2 text-light">&copy; 2021 <span class="text-primary">Haitham</span>. All Rights Reserved.</div>
-        </div>
-        <a href=""> <i class="uil uil-facebook-f h4 text-light"></i></a>
-        <a href=""><i class="uil uil-twitter h4 text-light"></i></a> 
-        <a href=""> <i class="uil uil-whatsapp h4 text-light"></i></a>
-      </div>
-    </footer>
-    <!-- End footer -->
-    <!-- <img class="heart " width="40px" src="./img/heart.gif" alt=""> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-      $(".owl-one").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 1,
-          },
-        },
-      });
-
-      $('.owl-towloop').owlCarousel({
-        center: true,
-        items:2,
-        loop:true,
-        dots: false,
-        margin:10,
-        responsive:{
-            600:{
-                items:4
-            }
-        }
-    });
-    $('.owl-townonloop').owlCarousel({
-        center: true,
-        items:2,
-        loop:false,
-        dots: false,
-        margin:10,
-        responsive:{
-            600:{
-                items:4
-            }
-        }
-    });
-    </script>
-  </body>
+          </h4> </div>
+		</div>
+	</section>
+	<!-- End Portfolio -->
+	<!-- Start Testimonial -->
+	<section class="testimonialpage container align-items-center justify-content-center   pt-md-5 mb-5" id="testimonial">
+		<h1 class="text-center mt-5">Testimonial</h1>
+		<p class="lead text-center text-secondary mb-5">My client saying</p>
+		<div class="owl-carousel owl-townonloop owl-towloop owl-tow owl-theme">
+			<div class="item row"> <img class="rounded-circle h-25 w-25 col-4" width="100%" src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
+				<div class="col-4 row">
+					<h6 class="col-12">Haitham Assoli</h6>
+					<p class="lead col-12 text-secondary fs-6">Clint</p>
+				</div>
+				<div class="col-4"><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i></div>
+				<p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+			</div>
+			<div class="item row"> <img class="rounded-circle w-25 h-25 col-4" src="https://randomuser.me/api/portraits/men/71.jpg" alt="">
+				<div class="col-4 row">
+					<h6 class="col-12">Haitham Assoli</h6>
+					<p class="lead col-12 text-secondary fs-6">Clint</p>
+				</div>
+				<div class="col-4"><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star"></i></div>
+				<p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+			</div>
+			<div class="item row"> <img class="rounded-circle w-25 h-25 col-4" src="https://randomuser.me/api/portraits/men/15.jpg" alt="">
+				<div class="col-4 row">
+					<h6 class="col-12">Haitham Assoli</h6>
+					<p class="lead col-12 text-secondary fs-6">Clint</p>
+				</div>
+				<div class="col-4"><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star"></i></div>
+				<p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+			</div>
+			<div class="item row"> <img class="rounded-circle w-25 h-25 col-4" src="https://randomuser.me/api/portraits/men/35.jpg" alt="">
+				<div class="col-4 row">
+					<h6 class="col-12">Haitham Assoli</h6>
+					<p class="lead col-12 text-secondary fs-6">Clint</p>
+				</div>
+				<div class="col-4"><i class="uil uil-star text-warning"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i></div>
+				<p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+			</div>
+			<div class="item row"> <img class="rounded-circle w-25 h-25 col-4" src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
+				<div class="col-4 row">
+					<h6 class="col-12">Haitham Assoli</h6>
+					<p class="lead col-12 text-secondary fs-6">Clint</p>
+				</div>
+				<div class="col-4"><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i></div>
+				<p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+			</div>
+			<div class="item row"> <img class="rounded-circle w-25 h-25 col-4" src="https://randomuser.me/api/portraits/men/55.jpg" alt="">
+				<div class="col-4 row">
+					<h6 class="col-12">Haitham Assoli</h6>
+					<p class="lead col-12 text-secondary fs-6">Clint</p>
+				</div>
+				<div class="col-4"><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star text-warning"></i><i class="uil uil-star"></i></div>
+				<p class="lead col fs-6">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+			</div>
+		</div>
+	</section>
+	<!-- End Testimonial -->
+	<!-- Start Contact -->
+	<section class="contactpage container align-items-center justify-content-center pt-md-5 mb-5" id="contact">
+		<h1 class="text-center mt-5">Contact Me</h1>
+		<p class="lead text-center text-secondary mb-5">Get in touch</p>
+		<div class="row self-align-center">
+			<div class="myaddress col-md-6 col-xs-12 text-center">
+				<div class="row d-flex text-center"> <i class="uil uil-phone h1 text-primary"></i>
+					<p class="lead fs-6 col-6">
+						<h4>Call Me</h4>
+						<p class="text-secondary">123-456-789</p>
+					</p> <i class="uil uil-envelope h1 text-primary"></i>
+					<p class="lead fs-6 col-6">
+						<h4>Email</h4>
+						<p class="text-secondary">haitham.b.assoli@gmail.com</p>
+					</p> <i class="uil uil-map-marker h1 text-primary"></i>
+					<p class="lead fs-6 col-6">
+						<h4>Location</h4>
+						<p class="text-secondary">123-456-789</p>
+					</p>
+				</div>
+			</div>
+			<form class="col-md-6 col-xs-12">
+				<div class="row">
+					<div class="mb-3 col-6">
+						<label class="form-label">Name</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1"> </div>
+					<div class="mb-3 col-6">
+						<label class="form-label">Email address</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1"> </div>
+					<div class="mb-3 col-12">
+						<label for="exampleFormControlTextarea1" class="form-label">Project</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Message</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+					</div>
+					<button type="button" class="btn btn-primary sendbtn ms-3 w-50"> Send Message<i class="uil uil-message"></i> </button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- End Contact -->
+	<!-- Start footer -->
+	<footer class="bg-light text-center py-5">
+		<div class="container px-5">
+			<div class="text-white-50 small">
+				<div class="mb-2 text-black h6">made with <i class="fas fa-heart text-danger"></i> &copy; 2021 <span class="text-primary">Haitham</span>. All Rights Reserved.</div>
+			</div>
+			<a href=""> <i class="uil uil-facebook-f h4 text-primary"></i></a> <a href=""><i class="uil uil-twitter h4 text-primary"></i></a>
+			<a href=""> <i class="uil uil-whatsapp h4 text-primary"></i></a>
+		</div>
+	</footer>
+	<!-- End footer -->
+	<!-- <img class="heart " width="40px" src="./img/heart.gif" alt=""> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+	$(".owl-one").owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: false,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 1,
+			},
+			1000: {
+				items: 1,
+			},
+		},
+	});
+	$('.owl-towloop').owlCarousel({
+		center: true,
+		items: 1,
+		loop: true,
+		dots: false,
+		margin: 10,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			1000: {
+				items: 4,
+			}
+		}
+	});
+	$('.owl-townonloop').owlCarousel({
+		center: true,
+		items: 1,
+		loop: false,
+		dots: false,
+		margin: 10,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			1000: {
+				items: 4,
+			}
+		}
+	});
+	</script>
+</body>
 </html>
