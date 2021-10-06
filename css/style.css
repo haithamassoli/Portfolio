@@ -1,0 +1,290 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Start navbar */
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/bars.svg);
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  opacity: 0.8;
+}
+/* End navbar */
+
+/* Start logo animatiom */
+#logo {
+  position: sticky;
+  animation: fill 1.5s both 10s;
+  height: 30px;
+  width: 120px;
+  left: 0;
+  bottom: 15px;
+  margin-right: 30px;
+}
+
+#logo #H {
+  stroke-dashoffset: 535px;
+  stroke-dasharray: 534px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 0;
+}
+
+#logo #i {
+  stroke-dashoffset: 239px;
+  stroke-dasharray: 239px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 7s;
+}
+
+#logo #t {
+  stroke-dasharray: 314px;
+  stroke-dashoffset: 313.01px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 6s;
+}
+
+#logo #h {
+  stroke-dasharray: 477px;
+  stroke-dashoffset: 476.99999px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 5s;
+}
+
+#logo #a {
+  stroke-dasharray: 506px;
+  stroke-dashoffset: 506px;
+  animation-name: lineAnim;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+
+#logo #m {
+  stroke-dasharray: 668px;
+  stroke-dashoffset: 668px;
+  animation-name: lineAnim;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+@keyframes lineAnim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fff;
+  }
+}
+/* End logo animatiom */
+
+/* Start home page */
+.homepage {
+  background: url(../img/layered-waves-haikei.svg) no-repeat center bottom;
+  background-size: cover;
+}
+.uil-angle-double-down {
+  bottom: 100px;
+}
+.home__blob {
+  fill: #3d5e91;
+}
+
+.socialicon {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 5px 10px 0;
+  background-color: rgb(122, 172, 255);
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.socialicon i {
+  font-size: 45px;
+  display: block;
+  transition: 1s ease;
+}
+
+.socialicon i:hover {
+  transform: rotate(-360deg);
+}
+
+.uil-angle-double-down {
+  position: absolute;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  left: 47%;
+  transition: 0.6s ease;
+  z-index: 444;
+}
+
+.uil-angle-double-down:hover {
+  transform: translateY(20px);
+}
+
+@media (max-width: 768px) {
+  .home__img {
+    order: 2;
+    width: 300px;
+  }
+
+  .home__about {
+    order: 4;
+  }
+}
+/* End home page */
+
+/* Start About */
+.haitham01 {
+  border-radius: 0% 44% 100% 100% / 0% 79% 0% 100%;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    text-align: center;
+  }
+}
+/* End About */
+
+/* Start skills page */
+.progress {
+  height: 3px;
+}
+/* End skills page */
+
+/* Start Qualification */
+.qualificationtpage {
+  background: url(../img/blob-haikei.svg) no-repeat center bottom;
+  background-size: cover;
+}
+
+.qualificationtpage .lineCercle {
+  height: 400px;
+  width: 1px;
+}
+
+.qualificationtpage .lineCercle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+.qualificationtpage .lineCercle::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+.qualificationtpage .lineCercleTow::before {
+  content: "";
+  position: absolute;
+  bottom: -400px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+.qualificationtpage .lineCercleTow::after {
+  content: "";
+  position: absolute;
+  bottom: -250px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .qualificationtpage {
+    font-size: 16px;
+  }
+}
+/* End Qualification */
+
+/* Start card page */
+.card-body-shadow {
+  height: 200px;
+  box-shadow: 10px 10px 12px -8px #888;
+  transition: 1s;
+}
+
+.card-body-shadow:hover {
+  background-color: rgba(175, 200, 238, 0.4);
+}
+
+.card-body-shadow:hover h5 {
+  color: #0d6efd;
+}
+
+.hovericon {
+  color: #0d6efd;
+  transition: 1s;
+}
+
+.card-body-shadow:hover .hovericon {
+  color: #0d6efd;
+}
+
+.card-body-shadow-tow {
+  transition: 1s;
+  box-shadow: 10px 10px 12px -8px #888;
+}
+
+.card-body-shadow-tow:hover {
+  transform: rotate(3deg);
+  background-color: rgba(175, 200, 238, 0.4);
+  color: #0d6efd;
+}
+/* End card page */
+
+.sendbtn {
+  margin-bottom: 100px;
+}
+
+.form-control {
+  outline: none;
+  border: none;
+  background-color: rgb(175, 200, 238);
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+footer {
+  background: url(../img/footer-blob.svg) no-repeat center bottom;
+  background-size: cover;
+}
