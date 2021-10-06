@@ -273,6 +273,7 @@
 }
 /* End card page */
 
+/* Start footer */
 .sendbtn {
   margin-bottom: 100px;
 }
@@ -288,3 +289,15 @@ footer {
   background: url(../img/footer-blob.svg) no-repeat center bottom;
   background-size: cover;
 }
+
+.uil-arrow-circle-down {
+  transform: rotate(180deg);
+  right: 0;
+  bottom: -10px;
+  transition: 1s ease;
+}
+
+.uil-arrow-circle-down:hover {
+  transform: rotate(-180deg);
+}
+/* End footer */
