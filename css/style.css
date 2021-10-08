@@ -293,4 +293,10 @@ footer {
 .uil-arrow-circle-down:hover {
   transform: rotate(-180deg);
 }
+
+@media (max-width: 576px) {
+  footer {
+    margin-bottom: 50px;
+  }
+}
 /* End footer */
