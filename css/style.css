@@ -15,6 +15,7 @@
 .navbar-light .navbar-nav .nav-link:hover {
   opacity: 0.8;
 }
+
 /* End navbar */
 
 /* Start logo animatiom */
@@ -250,18 +251,28 @@
   transition: 1s;
 }
 
-.card-body-shadow:hover .hovericon {
-  color: #0d6efd;
-}
-
 .card-body-shadow-tow {
   transition: 1s;
   box-shadow: 10px 10px 12px -8px #888;
 }
 
+.card-body-shadow-tow ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.card-body-shadow-tow ul li {
+  padding: 10px;
+  flex-basis: 1;
+  font-size: 20px;
+}
+
 .card-body-shadow-tow:hover {
-  transform: rotate(3deg);
-  background-color: rgba(175, 200, 238, 0.4);
+  /* transform: rotate(3deg); */
+  /* background-color: rgba(175, 200, 238, 0.4); */
   color: #0d6efd;
 }
 /* End card page */
